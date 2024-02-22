@@ -1,0 +1,23 @@
+localStorage.setItem('myKey', 'myValue')
+localStorage.getItem('myKey');  // returns 'myValue'
+localStorage.removeItem('myKey');
+localStorage.clear();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-app">
+        <h2>My Todo List</h2>
+        <input id="task-input" type="text" placeholder="Enter a new task">
+        <button id="add-task-btn">Add Task</button>
+        <ul id="tasks-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
