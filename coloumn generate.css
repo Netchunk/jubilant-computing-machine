@@ -1,0 +1,11 @@
+.columns {
+  -webkit-column-count: 4;
+  -mox-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  -webkit-column-rule: 4px solid #3366FF;
+  -moz-column-rule: 4px solid #3366FF;
+  column-rule: 4px solid #3366FF;
+}
