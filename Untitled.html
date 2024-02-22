@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .custom-select {
+        position: relative;
+    }
+
+    .custom-select select {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 100%;
+        font-size: 24px;
+        padding: 8px 50px 8px 50px;
+        background-color: #FFFFFF;
+        border: 4px outset #C4D1EB;
+        border-radius: 7px;
+        color: #000000;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 3px 3px 3px 4px #E2E2E2;
+    }
+
+    .custom-select select:focus {
+        background: #F2F2F2;
+        border: 3px solid #5A7EC7;
+        border-radius: 5px;
+    }
+
+    .custom-select::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        width: 12px;
+        height: 12px;
+        background-color: #000000;
+        clip-path: polygon(50% 0%, 100% 40%, 0% 60%, 100% 60%, 50% 100%, 0% 60%, 100% 40%, 0% 40%);
+    }
+    </style>
+</head>
+<body>
+    <div class="custom-select">
+        <select>
+            <option>Select Country</option>
+            <option>Australia</option>
+            <option>New Zealand</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+        </select>
+        <div class="select-arrow"></div>
+    </div>
+</body>
+</html>
